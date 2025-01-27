@@ -316,9 +316,8 @@ Neovim 里接入一个 AI ，现在正是实现的好时机</p>
 <span id="more"></span>
 <h1 id="注册-deepseek">注册 deepseek</h1>
 <p>这一步没什么好说的，注册就完了</p>
-<h1 id="给-neovim-添加-avanate-插件以下是这个插件的介绍">给 neovim 添加
-<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lldG9uZS9hdmFudGUubnZpbQ==">avanate<i class="fa fa-external-link-alt"></i></span>
-插件，以下是这个插件的介绍</h1>
+<h1 id="给-neovim-添加-avanate-插件">给 neovim 添加 <a
+href="https://github.com/yetone/avante.nvim">avanate</a> 插件</h1>
 <blockquote>
 <p>avante.nvim 是一个 Neovim 插件，旨在模拟 Cursor AI IDE 的行为。
 它为用户提供人工智能驱动的代码建议，并能以最小的代价将这些建议直接应用到源文件中。</p>
