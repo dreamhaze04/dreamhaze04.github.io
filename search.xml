@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title>ABC386-F-Operate-K</title>
-    <url>/2025/01-21-13-51-54</url>
+    <url>/2025/ABC386-F-Operate-K/</url>
     <content><![CDATA[<p>这题在编辑距离的基础上限制了操作步骤，这题的字符串长度在 5e5,
 用常规的编辑距离的方法，时空复杂度均为O(mn)，必超时加MLE，所以需要一定的优化。分析可知，dp矩阵只有中间一部分有贡献，其他的部分（i
 - j &gt; k）中，必然无法在 k 次处理中完成，故可以舍去，因此我们只需要用
@@ -25,7 +25,7 @@ K</a></h1>
   </entry>
   <entry>
     <title>解决 neovide 的部分图标缺失问题</title>
-    <url>/2025/01-23-07-01-40</url>
+    <url>/2025/neovide%E7%9A%84%E9%83%A8%E5%88%86%E5%9B%BE%E6%A0%87%E7%BC%BA%E5%A4%B1%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>由于默认 neovide
 字体图标不全导致部分图标以<strong>小飞船</strong>的形式出现，我们可以通过下载
 Nerd Font 字体来解决这个问题。</p>
@@ -57,8 +57,8 @@ Nerd Font 字体来解决这个问题。</p>
   </entry>
   <entry>
     <title>洛谷P1433-吃奶酪</title>
-    <url>/2025/01-20-05-58-12</url>
-    <content><![CDATA[<p>这道题在新手题单里面卡了我两个月，原因就是这道题出现在了搜索的板块，但是正规做法是用状态压缩dp来做，于是我就一直搁着，最近算是终于给他解决了，其实这道题本质是和<a href="/2025/01-23-00-35-23" title="最短Hamilton距离">最短Hamilton距离</a>完全一样，就最后一步有点变化。</p>
+    <url>/2025/%E5%90%83%E5%A5%B6%E9%85%AA/</url>
+    <content><![CDATA[<p>这道题在新手题单里面卡了我两个月，原因就是这道题出现在了搜索的板块，但是正规做法是用状态压缩dp来做，于是我就一直搁着，最近算是终于给他解决了，其实这道题本质是和<a href="/2025/01-23-00-35-23/" title="最短Hamilton距离">最短Hamilton距离</a>完全一样，就最后一步有点变化。</p>
 <span id="more"></span>
 <h1 id="吃奶酪"><a
 href="https://www.luogu.com.cn/problem/P1433">吃奶酪</a></h1>
@@ -74,7 +74,7 @@ href="https://www.luogu.com.cn/problem/P1433">吃奶酪</a></h1>
   </entry>
   <entry>
     <title>拓扑排序</title>
-    <url>/2025/01-21-08-19-03</url>
+    <url>/2025/%E6%8B%93%E6%89%91%E6%8E%92%E5%BA%8F/</url>
     <content><![CDATA[<p>在不保证字典序的时候可以使用 dfs 或者
 kahn(基于bfs)，当需要满足字典序时可用优先队列维护</p>
 <span id="more"></span>
@@ -114,7 +114,7 @@ BFS 就能完美解决。</li>
   </entry>
   <entry>
     <title>排列中的循环问题</title>
-    <url>/2025/01-21-12-07-10</url>
+    <url>/2025/%E6%8E%92%E5%88%97%E4%B8%AD%E7%9A%84%E5%BE%AA%E7%8E%AF%E9%97%AE%E9%A2%98/</url>
     <content><![CDATA[<p>该类问题通常通过一个排列中的一个元素作为索引指向排列中的另外一个元素，这样通常能够构成一个循环</p>
 <p>例如一个排列 <span class="math inline">\(P  = [2, 3, 1, 5,
 4]\)</span></p>
@@ -143,7 +143,7 @@ and the Permutation</a></h2>
   </entry>
   <entry>
     <title>最小生成树模板</title>
-    <url>/2025/01-21-12-18-51</url>
+    <url>/2025/%E6%9C%80%E5%B0%8F%E7%94%9F%E6%88%90%E6%A0%91%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<p>最常用的两个最小生成树算法是 Prim 和
 Kruskal。前者编码较为复杂，用优先队列来维护；后者编码较容易，用并查集来维护。</p>
 <span id="more"></span>
@@ -163,7 +163,7 @@ Kruskal。前者编码较为复杂，用优先队列来维护；后者编码较�
   </entry>
   <entry>
     <title>最短Hamilton距离</title>
-    <url>/2025/01-23-00-35-23</url>
+    <url>/2025/%E6%9C%80%E7%9F%ADHamilton%E8%B7%9D%E7%A6%BB/</url>
     <content><![CDATA[<p>这题可以说是状态压缩的其中一类的板题了</p>
 <span id="more"></span>
 <h1 id="最短hamilton路径"><a
@@ -180,7 +180,7 @@ href="https://www.acwing.com/problem/content/description/93/">最短Hamilton路�
   </entry>
   <entry>
     <title>算法竞赛中左闭右开区间的好处</title>
-    <url>/2025/01-24-13-02-51</url>
+    <url>/2025/%E7%AE%97%E6%B3%95%E7%AB%9E%E8%B5%9B%E4%B8%AD%E5%B7%A6%E9%97%AD%E5%8F%B3%E5%BC%80%E5%8C%BA%E9%97%B4%E7%9A%84%E5%A5%BD%E5%A4%84/</url>
     <content><![CDATA[<p>左闭右开区间（[l, r)）在算法竞赛中常用，主要因为其计算长度直观（r -
 l）、分割区间无重叠、与 STL 接口兼容、空区间表示自然（l ==
 r），并且在循环和算法实现中逻辑更简洁。这些特点使得它成为处理区间问题的首选。</p>
@@ -234,7 +234,7 @@ STL 接口兼容。</strong><br />
   </entry>
   <entry>
     <title>素数筛</title>
-    <url>/2025/01-21-13-55-32</url>
+    <url>/2025/%E7%B4%A0%E6%95%B0%E7%AD%9B/</url>
     <content><![CDATA[<p>常见的素数筛有两种，分别是埃氏筛和欧拉筛，在数据规模较大的场景中，欧拉筛的效率高于埃氏筛，但欧拉筛的编码相对较复杂，不过也挺简单。</p>
 <span id="more"></span>
 <h1 id="素数筛">素数筛</h1>
@@ -273,7 +273,7 @@ STL 接口兼容。</strong><br />
   </entry>
   <entry>
     <title>线段树模板及常见题型</title>
-    <url>/2025/01-24-11-50-35</url>
+    <url>/2025/%E7%BA%BF%E6%AE%B5%E6%A0%91%E5%90%84%E7%A7%8D%E6%A8%A1%E5%9E%8B%E5%8F%8A%E6%A8%A1%E6%9D%BF/</url>
     <content><![CDATA[<p>这里包含了线段树的模板以及常见题型</p>
 <span id="more"></span>
 <h1 id="模板">模板</h1>
@@ -294,7 +294,7 @@ STL 接口兼容。</strong><br />
   </entry>
   <entry>
     <title>给 neovim 加上 DeepSeek AI 助手来高效编辑代码</title>
-    <url>/2025/01-27-13-27-03</url>
+    <url>/2025/%E7%BB%99neovim%E5%8A%A0%E4%B8%8ADeepSeek%E6%9D%A5%E9%AB%98%E6%95%88%E7%BC%96%E8%BE%91%E4%BB%A3%E7%A0%81/</url>
     <content><![CDATA[<p>最近出的 <span class="exturl" data-url="aHR0cHM6Ly9jaGF0LmRlZXBzZWVrLmNvbS8=">DeepSeek<i class="fa fa-external-link-alt"></i></span>
 我也小试了一下，确实挺好用的，关键是 API 真的便宜，刚好我也老早就想在
 Neovim 里接入一个 AI ，现在正是实现的好时机</p>
@@ -352,7 +352,7 @@ href="https://github.com/yetone/avante.nvim">avante 官方仓库</a></p>
   </entry>
   <entry>
     <title>逆序对</title>
-    <url>/2025/01-21-10-17-08</url>
+    <url>/2025/%E9%80%86%E5%BA%8F%E5%AF%B9/</url>
     <content><![CDATA[<p>用树状数组很神奇的做出来了，原理暂时不清楚，反正就是很神奇</p>
 <span id="more"></span>
 <h1 id="代码">代码</h1>
