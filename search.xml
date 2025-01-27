@@ -307,4 +307,61 @@ STL 接口兼容。</strong><br />
         <tag>树状数组</tag>
       </tags>
   </entry>
+  <entry>
+    <title>给 neovim 加上 DeepSeek AI 助手来高效编辑代码</title>
+    <url>/2025/01/27/13/27/03/</url>
+    <content><![CDATA[<p>最近出的 <span class="exturl" data-url="aHR0cHM6Ly9jaGF0LmRlZXBzZWVrLmNvbS8=">DeepSeek<i class="fa fa-external-link-alt"></i></span>
+我也小试了一下，确实挺好用的，关键是 API 真的便宜，刚好我也老早就想在
+Neovim 里接入一个 AI ，现在正是实现的好时机</p>
+<span id="more"></span>
+<h1 id="注册-deepseek">注册 deepseek</h1>
+<p>这一步没什么好说的，注册就完了</p>
+<h1 id="给-neovim-添加-avanate-插件以下是这个插件的介绍">给 neovim 添加
+<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL3lldG9uZS9hdmFudGUubnZpbQ==">avanate<i class="fa fa-external-link-alt"></i></span>
+插件，以下是这个插件的介绍</h1>
+<blockquote>
+<p>avante.nvim 是一个 Neovim 插件，旨在模拟 Cursor AI IDE 的行为。
+它为用户提供人工智能驱动的代码建议，并能以最小的代价将这些建议直接应用到源文件中。</p>
+</blockquote>
+<p>简而言之，就是为 neovim 提供了接入各种 ai
+的接口，这里我们可以直接用一下代码来安装</p>
+<p><strong>注意</strong>：这里只提供 Lazy
+插件管理器的安装方式，其他方式请自行设置。并且同为 Lazy
+插件管理器也可能因为插件组织方式不同有所差异，以下为单文件插件管理方式</p>
+<p>在 neovim 配置目录下对应的 plugins 目录下新建 avante.lua
+文件，加入以下内容，保存重启即可自动安装</p>
+<figure class="highlight lua"><table><tr><td class="code"><pre><span class="line"><span class="keyword">return</span> &#123;</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="string">&quot;yetone/avante.nvim&quot;</span>,</span><br><span class="line">        event = <span class="string">&quot;VeryLazy&quot;</span>,</span><br><span class="line">        lazy = <span class="literal">false</span>,</span><br><span class="line">        version = <span class="literal">false</span>, <span class="comment">-- set this if you want to always pull the latest change</span></span><br><span class="line">        opts = &#123;</span><br><span class="line">            provider = <span class="string">&quot;openai&quot;</span>,</span><br><span class="line">            auto_suggestions_provider = <span class="string">&quot;openai&quot;</span>, <span class="comment">-- Since auto-suggestions are a high-frequency operation and therefore expensive, it is recommended to specify an inexpensive provider or even a free provider: copilot</span></span><br><span class="line">            openai = &#123;</span><br><span class="line">                endpoint = <span class="string">&quot;https://api.deepseek.com&quot;</span>,</span><br><span class="line">                model = <span class="string">&quot;deepseek-chat&quot;</span>,</span><br><span class="line">                timeout = <span class="number">30000</span>, <span class="comment">-- Timeout in milliseconds</span></span><br><span class="line">                temperature = <span class="number">0</span>,</span><br><span class="line">                max_tokens = <span class="number">4096</span>,</span><br><span class="line">                <span class="comment">-- optional</span></span><br><span class="line">                api_key_name = <span class="string">&quot;DEEPSEEK_API_KEY&quot;</span>, <span class="comment">-- default OPENAI_API_KEY if not set</span></span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">        <span class="comment">-- if you want to build from source then do `make BUILD_FROM_SOURCE=true`</span></span><br><span class="line">        build = <span class="string">&quot;make&quot;</span>,</span><br><span class="line">        <span class="comment">-- build = &quot;powershell -ExecutionPolicy Bypass -File Build.ps1 -BuildFromSource false&quot; -- for windows</span></span><br><span class="line">        dependencies = &#123;</span><br><span class="line">            <span class="string">&quot;nvim-treesitter/nvim-treesitter&quot;</span>,</span><br><span class="line">            <span class="string">&quot;stevearc/dressing.nvim&quot;</span>,</span><br><span class="line">            <span class="string">&quot;nvim-lua/plenary.nvim&quot;</span>,</span><br><span class="line">            <span class="string">&quot;MunifTanjim/nui.nvim&quot;</span>,</span><br><span class="line">            <span class="comment">--- The below dependencies are optional,</span></span><br><span class="line">            <span class="string">&quot;nvim-tree/nvim-web-devicons&quot;</span>, <span class="comment">-- or echasnovski/mini.icons</span></span><br><span class="line">            <span class="string">&quot;hrsh7th/nvim-cmp&quot;</span>,            <span class="comment">-- autocompletion for avante commands and mentions</span></span><br><span class="line">            <span class="string">&quot;zbirenbaum/copilot.lua&quot;</span>,      <span class="comment">-- for providers=&#x27;copilot&#x27;</span></span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">-- support for image pasting</span></span><br><span class="line">                <span class="string">&quot;HakonHarnes/img-clip.nvim&quot;</span>,</span><br><span class="line">                event = <span class="string">&quot;VeryLazy&quot;</span>,</span><br><span class="line">                opts = &#123;</span><br><span class="line">                    <span class="comment">-- recommended settings</span></span><br><span class="line">                    default = &#123;</span><br><span class="line">                        embed_image_as_base64 = <span class="literal">false</span>,</span><br><span class="line">                        prompt_for_file_name = <span class="literal">false</span>,</span><br><span class="line">                        drag_and_drop = &#123;</span><br><span class="line">                            insert_mode = <span class="literal">true</span>,</span><br><span class="line">                        &#125;,</span><br><span class="line">                        <span class="comment">-- required for Windows users</span></span><br><span class="line">                        use_absolute_path = <span class="literal">true</span>,</span><br><span class="line">                    &#125;,</span><br><span class="line">                &#125;,</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="comment">-- Make sure to set this up properly if you have lazy=true</span></span><br><span class="line">                <span class="string">&#x27;MeanderingProgrammer/render-markdown.nvim&#x27;</span>,</span><br><span class="line">                opts = &#123;</span><br><span class="line">                    file_types = &#123; <span class="string">&quot;markdown&quot;</span>, <span class="string">&quot;Avante&quot;</span> &#125;,</span><br><span class="line">                &#125;,</span><br><span class="line">                ft = &#123; <span class="string">&quot;markdown&quot;</span>, <span class="string">&quot;Avante&quot;</span> &#125;,</span><br><span class="line">            &#125;,</span><br><span class="line">        &#125;,</span><br><span class="line">    &#125;,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="设置-api_key">设置 API_KEY</h1>
+<h2 id="获取-api_key">获取 API_KEY</h2>
+<p>前往 <span class="exturl" data-url="aHR0cHM6Ly9wbGF0Zm9ybS5kZWVwc2Vlay5jb20vYXBpX2tleXM=">deepseek
+开放平台<i class="fa fa-external-link-alt"></i></span> 登陆自己账号。初始用户会有 10￥ 的赠送额度，点击创建API key
+即可，生成 api key 后请妥善保存，退出后就无法重新查看</p>
+<h2 id="设置系统变量">设置系统变量</h2>
+<p>不设置系统变量的情况下，每次重新进入 neovim 调用 avanate
+都要重新输入一遍 API KEY，设置后即可自动获取。</p>
+<h3 id="windows-系统">windows 系统</h3>
+<p>直接进入系统环境变量设置窗口，添加变量 <code>DEEPSEEK_API_KEY</code>
+，设置值为刚刚创建的 api key</p>
+<h3 id="linux-系统">linux 系统</h3>
+<p>编辑 <code>/etc/environment</code> 文件，加入
+<code>DEEPSEEK_API_KEY='api_key</code> ，等号后面的 <code>api_key</code>
+替换为刚刚创建的 api key ，随后保存重启系统即可</p>
+<h1 id="使用">使用</h1>
+<p><strong><code>&lt;leader&gt;</code>
+键是自定义的，一般情况下是空格键</strong></p>
+<ul>
+<li>进入 neovim 后，按下 <code>&lt;leader&gt;aa</code>
+即可打开对话窗口</li>
+</ul>
+<p>其余更多使用方式请查阅 <a
+href="https://github.com/yetone/avante.nvim">avante 官方仓库</a></p>
+]]></content>
+      <categories>
+        <category>工具</category>
+      </categories>
+      <tags>
+        <tag>neovim</tag>
+        <tag>deepseek</tag>
+      </tags>
+  </entry>
 </search>
