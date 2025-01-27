@@ -343,8 +343,8 @@ href="https://github.com/yetone/avante.nvim">avanate</a> 插件</h1>
 ，设置值为刚刚创建的 api key</p>
 <h3 id="linux-系统">linux 系统</h3>
 <p>编辑 <code>/etc/environment</code> 文件，加入
-<code>DEEPSEEK_API_KEY='api_key</code> ，等号后面的 <code>api_key</code>
-替换为刚刚创建的 api key ，随后保存重启系统即可</p>
+<code>DEEPSEEK_API_KEY='api_key'</code> ，等号后面的
+<code>api_key</code> 替换为刚刚创建的 api key ，随后保存重启系统即可</p>
 <h1 id="使用">使用</h1>
 <p><strong><code>&lt;leader&gt;</code>
 键是自定义的，一般情况下是空格键</strong></p>
