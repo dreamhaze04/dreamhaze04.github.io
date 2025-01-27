@@ -283,6 +283,9 @@ STL 接口兼容。</strong><br />
 <h2 id="区间加-区间求和">区间加 + 区间求和</h2>
 <p>例题：<span class="exturl" data-url="aHR0cHM6Ly93d3cubHVvZ3UuY29tLmNuL3Byb2JsZW0vUDMzNzI=">洛谷 P3372
 【模板】线段树 1<i class="fa fa-external-link-alt"></i></span></p>
+<h2 id="区间加-区间修改-区间最大值">区间加 + 区间修改 + 区间最大值</h2>
+<p>例题：<span class="exturl" data-url="aHR0cHM6Ly93d3cubHVvZ3UuY29tLmNuL3Byb2JsZW0vUDEyNTM=">洛谷 P1253
+扶苏的问题<i class="fa fa-external-link-alt"></i></span></p>
 ]]></content>
       <categories>
         <category>算法</category>
