@@ -23,7 +23,7 @@
   <meta name="description" content="这题可以说是状态压缩的其中一类的板题了">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最短Hamilton距离">
-<meta property="og:url" content="http://dreamhaze04.github.io/2025/01/23/00/35/23/index.html">
+<meta property="og:url" content="http://dreamhaze04.github.io/2025/01-23-00-35-23">
 <meta property="og:site_name" content="mengh04の小窝">
 <meta property="og:description" content="这题可以说是状态压缩的其中一类的板题了">
 <meta property="og:locale" content="zh_CN">
@@ -33,7 +33,7 @@
 <meta property="article:tag" content="状压dp">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://dreamhaze04.github.io/2025/01/23/00/35/23/">
+<link rel="canonical" href="http://dreamhaze04.github.io/2025/01-23-00-35-23">
 
 
 <script id="page-configurations">
@@ -194,7 +194,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://dreamhaze04.github.io/2025/01/23/00/35/23/">
+    <link itemprop="mainEntityOfPage" href="http://dreamhaze04.github.io/2025/01-23-00-35-23">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -302,11 +302,11 @@ target="_blank" rel="noopener" href="https://www.acwing.com/problem/content/desc
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2025/01/21/13/55/32/" rel="prev" title="素数筛">
+    <a href="/2025/01-21-13-55-32" rel="prev" title="素数筛">
       <i class="fa fa-chevron-left"></i> 素数筛
     </a></div>
       <div class="post-nav-item">
-    <a href="/2025/01/23/07/01/40/" rel="next" title="解决 neovide 的部分图标缺失问题">
+    <a href="/2025/01-23-07-01-40" rel="next" title="解决 neovide 的部分图标缺失问题">
       解决 neovide 的部分图标缺失问题 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -599,7 +599,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'blog-comments-repo',
       owner       : 'dreamhaze04',
       admin       : ['dreamhaze04'],
-      id          : 'd7f1b023907493f90ca1aa56a4346b46',
+      id          : '44cb0385369de3fde42e1a57c4b14b17',
         language: 'zh-CN',
       distractionFreeMode: true
     });

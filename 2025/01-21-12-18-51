@@ -23,7 +23,7 @@
   <meta name="description" content="最常用的两个最小生成树算法是 Prim 和 Kruskal。前者编码较为复杂，用优先队列来维护；后者编码较容易，用并查集来维护。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="最小生成树模板">
-<meta property="og:url" content="http://dreamhaze04.github.io/2025/01/21/12/18/51/index.html">
+<meta property="og:url" content="http://dreamhaze04.github.io/2025/01-21-12-18-51">
 <meta property="og:site_name" content="mengh04の小窝">
 <meta property="og:description" content="最常用的两个最小生成树算法是 Prim 和 Kruskal。前者编码较为复杂，用优先队列来维护；后者编码较容易，用并查集来维护。">
 <meta property="og:locale" content="zh_CN">
@@ -35,7 +35,7 @@
 <meta property="article:tag" content="图论">
 <meta name="twitter:card" content="summary">
 
-<link rel="canonical" href="http://dreamhaze04.github.io/2025/01/21/12/18/51/">
+<link rel="canonical" href="http://dreamhaze04.github.io/2025/01-21-12-18-51">
 
 
 <script id="page-configurations">
@@ -196,7 +196,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://dreamhaze04.github.io/2025/01/21/12/18/51/">
+    <link itemprop="mainEntityOfPage" href="http://dreamhaze04.github.io/2025/01-21-12-18-51">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -313,11 +313,11 @@ Kruskal。前者编码较为复杂，用优先队列来维护；后者编码较�
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2025/01/21/12/07/10/" rel="prev" title="排列中的循环问题">
+    <a href="/2025/01-21-12-07-10" rel="prev" title="排列中的循环问题">
       <i class="fa fa-chevron-left"></i> 排列中的循环问题
     </a></div>
       <div class="post-nav-item">
-    <a href="/2025/01/21/13/51/54/" rel="next" title="ABC386-F-Operate-K">
+    <a href="/2025/01-21-13-51-54" rel="next" title="ABC386-F-Operate-K">
       ABC386-F-Operate-K <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
@@ -610,7 +610,7 @@ NexT.utils.loadComments(document.querySelector('#gitalk-container'), () => {
       repo        : 'blog-comments-repo',
       owner       : 'dreamhaze04',
       admin       : ['dreamhaze04'],
-      id          : '39c90f5bdbdbf03598d8b0489547fb1e',
+      id          : '6aa289c4bc5a82875ec058ccb61952ec',
         language: 'zh-CN',
       distractionFreeMode: true
     });
